@@ -1,24 +1,33 @@
-@media(max-width: 835px){
+@media(max-width: 650px) {
 
-body{
-    max-height: 800px;
-}
-header{
-    flex-direction: column;
-}
+    body {
+        max-height: 800px;
+    }
 
-.menu{
-    flex-direction: column;
-    width: 233px;
-}
+    header {
+        flex-direction: column;
+    }
 
-.menu li{
-    margin: 10px;
-    font-size: 24px;
-    width: 100px;
-}
+    .menu {
+        flex-direction: column;
+        margin-top: 50px;
+    }
 
-.menu li#selecionado{
-    width: 100px;
-}
+    .menu li {
+        margin-top: 20px;
+    }
+
+    .menu li:last-child{
+        margin-top: 20px;
+    }
+
+    .menu li a{
+        font-size: 24px;
+        padding: 17px 43px;
+    }
+
+    .menu li a.btn {
+        font-size: 24px;
+        padding: 15px 23px;
+    }
 }

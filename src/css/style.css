@@ -8,16 +8,18 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0px 20px;
+    padding: 45px;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
 }
 
 .logo {
     display: flex;
-    flex-direction: row;
     font-size: 20px;
     font-style: normal;
     font-weight: 800;
@@ -30,51 +32,30 @@ header {
 
 .menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 .menu li {
     display: flex;
     align-items: center;
-    align-self: center;
-    justify-content: space-around;
-    height: 40px;
-    padding: 0 20px;
-}
-
-.menu li#selecionado{
-    background-color: #5BC241;
-    width: 70px;
-}
-
-.menu li#selecionado a{
-    color: #fff;
 }
 
 .menu li a{
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: #000;
-    display: block;
-    text-align: center;
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin: 15px;
 }
 
-.menu .botao{
-    width: 127px;
-    height: 39px;
-    margin: 20px;
-    margin: auto;
-    background-image: url(botao.svg);
-    background-repeat: no-repeat;
-    border: none;
+.menu li a:hover{
+    background-color: #5BC241;
     color: #fff;
 }
 
-.menu .botao a{
+.menu li a.btn{
+    background-color: #5BC241;
+    border-radius: 10px;
     color: #fff;
-    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 20px;
     font-size: 16px;
 }
